@@ -1,0 +1,238 @@
+/* --------------- */
+/* --- NAV BAR --- */
+/* --------------- */
+
+sidenav
+{
+  position: fixed;
+}
+
+topnav
+{
+  vertical-align: top;
+  background-color: #888888;
+  position: fixed;
+  margin-left: 400px;
+  width:80%;
+  border: 0px;
+  border-bottom: 1px;
+  border-style: dashed;
+  margin-bottom: 10px
+}
+
+body
+{
+  background-color: #fff;
+  padding:50px;
+  font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color:#595959;
+  font-weight:400;
+}
+
+.navItem
+{
+  font-size: 22px;
+  font-weight: lighter;
+  /*padding: 20px;*/
+}
+
+.navbar.navbar
+{
+  margin-top:-16px;
+  margin-bottom:26px;
+  font-size: 22px;
+  padding-left: 72px;
+  font-weight: lighter;
+  /*font-family: Helvetica,sans-serif;*/
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: none;
+}
+
+.navbar_li.navbar_li
+{
+  /*display: inline;*/
+  margin-bottom: 7px;
+  margin-right: 64px;
+  list-style: none;
+  text-align: center;
+}
+
+.navbar_li a:hover,
+.navbar_li a:focus
+{
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-width: 1px;
+  color: #80CCFF;
+}
+
+#selected
+{
+  text-decoration: underline;
+}
+
+/* -------------- 
+/* --- PAPERS --- */
+/* -------------- */
+
+
+/* PAPERS PAGE */
+.paper_line
+{
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.paper_title
+{
+  margin-left: 60px;
+  margin-right: 20px;
+  padding-right: 20px;
+  text-align: left;
+  font-weight: 800;
+}
+
+
+#bibtexFont
+{
+  font-size: 10px;
+  color:#9AC39D !important;
+}
+
+#appendixFont
+{
+  color:#E8AB6B !important; 
+}
+
+
+/* ---------------- */
+/* --- PICTURES --- */
+/* ---------------- */
+.colPortrait
+{
+  margin-bottom: 8px;
+  border-radius: 10px;
+}
+
+#collaboratorWrapper
+{
+  text-align: center;
+  margin-left: -30%;
+}
+
+/* ------------ */
+/* --- BLOG --- */
+/* ------------ */
+
+
+
+#blognav
+{
+  float:right;
+  padding:14px;
+  border-radius: 10px;
+  border-color: #cdcccc;
+  border:dotted;
+  border-width: 1px;
+  margin-left:38px;
+  margin-top:10px;
+  margin-right:36px;
+  margin-bottom:40px;
+  width:195px;
+}
+
+#allPostList
+{
+  /*margin-left:20px;*/
+  line-height: 24px;
+  text-align: justify;
+}
+
+#blognavHeader
+{
+  margin-top: -2px;
+  font-style: italic;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.blognav_element
+{
+  margin-left:16px;
+  font-size: 16px;
+}
+
+.blognav_element a:hover,
+.blognav_element a:focus
+{
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-width: 1px;
+  color: #80CCFF;
+}
+
+#blog_selected
+{
+  text-decoration: underline;
+}
+
+
+/* TUTORIAL */
+
+skinnycode
+{
+  font-family: monospace;
+  background:#F8F8FF;
+  border:black dashed 1px;
+  padding:6px;
+  margin-right: auto;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  display:inline-block;
+  max-width:75%;
+}
+
+code
+{
+  font-family: monospace;
+  background:#F8F8FF;
+  border:black dashed 1px;
+  padding:6px;
+  margin-right: auto;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  display:block;
+  max-width:75%;
+}
+
+mathcode
+{
+  font-family: monospace;
+  background:#F8F8FF;
+  border:black dashed 1px;
+  padding:6px;
+  margin-left: 80px;
+  display:inline-block;
+  max-width:60%;
+}
+
+#tutorialP
+{
+  max-width:80%;
+}
+
+#definition
+{
+  margin-left: 30px;
+  margin-bottom: 20px;
+  margin-right: 300px;
+  text-align: left;
+  font-family: serif;
+  padding: 10px; 
+  max-width: 90%;
+  border-style: solid;
+}
