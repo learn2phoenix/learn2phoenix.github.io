@@ -35,12 +35,12 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#39c;
+  color:#a21942;
   text-decoration:none;
 }
 
 a:hover {
-  color:#069;
+  color:#f88c99;
 }
 
 a small {
@@ -105,7 +105,8 @@ img {
 
 header {
   /*margin-top:100px;*/
-  width:270px;
+  /*background-color: #996633;*/
+  width:300px;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
@@ -131,10 +132,10 @@ hr {
 }
 
 footer {
-  width:270px;
+  width:300px;
   float:left;
-  position:fixed;
-  bottom:50px;
+  position: fixed;
+  margin-top:500px;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 

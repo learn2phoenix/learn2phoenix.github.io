@@ -1,23 +1,20 @@
 /* --------------- */
+/* --- Portrait --- */
+/* --------------- */
+
+.portrait {
+  width:160px;
+  margin-bottom: 8px;
+  /*border-radius: 10px;*/
+  border-radius: 50%;
+}
+
+/* --------------- */
 /* --- NAV BAR --- */
 /* --------------- */
 
-sidenav
-{
-  position: fixed;
-}
-
-topnav
-{
-  vertical-align: top;
-  background-color: #888888;
-  position: fixed;
-  margin-left: 400px;
-  width:80%;
-  border: 0px;
-  border-bottom: 1px;
-  border-style: dashed;
-  margin-bottom: 10px
+html {
+  scroll-behavior: smooth;
 }
 
 body
@@ -29,34 +26,24 @@ body
   font-weight:400;
 }
 
-.navItem
-{
-  font-size: 22px;
-  font-weight: lighter;
-  /*padding: 20px;*/
-}
+/* Change some things if user is on a phone */
 
 .navbar.navbar
 {
+  width:260px;
   margin-top:-16px;
-  margin-bottom:26px;
-  font-size: 22px;
-  padding-left: 72px;
-  font-weight: lighter;
-  /*font-family: Helvetica,sans-serif;*/
+  font-size: 18px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   list-style-type: none;
+  white-space: nowrap;
 }
 
 .navbar_li.navbar_li
 {
   /*display: inline;*/
-  margin-bottom: 7px;
-  margin-right: 64px;
-  list-style: none;
-  text-align: center;
+  margin-bottom: 7px; /* Adds space between each nav item */
+  /*font-weight: lighter;*/
+  margin-right:36px;
 }
 
 .navbar_li a:hover,
@@ -71,6 +58,12 @@ body
 #selected
 {
   text-decoration: underline;
+}
+
+.workPicture
+{
+  width: 240px;
+  margin-right:24px;
 }
 
 /* -------------- 
@@ -129,6 +122,16 @@ body
 /* ------------ */
 
 
+h4
+{
+  font-size:18px;
+}
+
+h5
+{
+  font-size:13px;
+}
+
 
 #blognav
 {
@@ -149,7 +152,7 @@ body
 {
   /*margin-left:20px;*/
   line-height: 24px;
-  text-align: justify;
+  /*text-align: justify;*/
 }
 
 #blognavHeader
@@ -227,12 +230,57 @@ mathcode
 
 #definition
 {
-  margin-left: 30px;
-  margin-bottom: 20px;
-  margin-right: 300px;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  margin-right: 160px;
   text-align: left;
   font-family: serif;
-  padding: 10px; 
-  max-width: 90%;
+  padding: 15px;
+  max-width: 95%;
+  min-width: 200px;
   border-style: solid;
+  border-width: 1px;
+}
+
+#definition_no_b
+{
+  margin-left: 40px;
+  margin-right: 160px;
+  text-align: left;
+  font-family: serif;
+  /*padding: 15px;*/
+  max-width: 95%;
+  min-width: 200px;
+}
+
+#narrow_definition
+{
+  margin-left: 40px;
+  margin-bottom: 20px;
+  margin-right: 280px;
+  text-align: left;
+  font-family: serif;
+  padding: 15px;
+  max-width: 95%;
+  min-width: 200px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+
+/* -------------- */
+/* --- MOBILE --- */
+/* -------------- */
+
+@media only screen  and (max-device-width: 600px)
+{
+ .navbar_li.navbar_li {
+    margin-left:48px !important;
+    /*margin-right:20px !important;*/
+    text-align: left;
+ }
+ .workPicture {
+  width: 0px !important;
+  margin-right:0px;
+ }
 }
