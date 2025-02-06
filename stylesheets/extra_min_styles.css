@@ -9,6 +9,36 @@
   border-radius: 50%;
 }
 
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.social-icons i {
+  font-size: 32px !important;
+}
+
+.social-icons .ai {
+  font-size: 32px !important;
+}
+
+.social-icons .ai-cv {
+  font-size: 32px !important;
+  line-height: 1;
+  vertical-align: middle;
+}
+
 /* --------------- */
 /* --- NAV BAR --- */
 /* --------------- */
