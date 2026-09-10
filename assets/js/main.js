@@ -19,19 +19,9 @@
   var year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
 
-  /* -- Nav: hairline once you leave the hero --------------------------- */
-  var nav = document.getElementById("nav");
-  if (nav) {
-    var onNavScroll = function () {
-      nav.dataset.scrolled = window.scrollY > 24 ? "true" : "false";
-    };
-    onNavScroll();
-    window.addEventListener("scroll", onNavScroll, { passive: true });
-  }
-
   /* -- Scroll-spy ------------------------------------------------------ */
   var spyLinks = Array.prototype.slice.call(
-    document.querySelectorAll(".nav__scrollspy")
+    document.querySelectorAll(".ledger__scrollspy")
   );
   var sections = spyLinks
     .map(function (a) { return document.querySelector(a.getAttribute("href")); })
@@ -77,6 +67,4 @@
     window.addEventListener("scroll", paint, { passive: true });
   }
 
-  /* The hero mosaic drifts via CSS animation (see .mosaic__track); it needs no
-     JS, and `prefers-reduced-motion` parks it in the stylesheet. */
 })();
