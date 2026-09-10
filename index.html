@@ -7,14 +7,14 @@
 
   <title>Anubhav Gupta — Video Understanding, University of Maryland</title>
   <meta name="description"
-    content="Anubhav Gupta is a PhD student in Computer Science at the University of Maryland. He works on egocentric procedural video: parsing long, multi-step tasks online, one frame at a time.">
+    content="Anubhav Gupta is a PhD student in Computer Science at the University of Maryland. He works on video understanding, currently on parsing long, multi-step tasks online, one frame at a time.">
   <meta name="author" content="Anubhav Gupta">
   <link rel="canonical" href="https://learn2phoenix.github.io/">
 
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Anubhav Gupta">
   <meta property="og:description"
-    content="PhD student at the University of Maryland. Egocentric procedural video — parsing long, multi-step tasks online, one frame at a time.">
+    content="PhD student at the University of Maryland working on video understanding — parsing long, multi-step tasks online, one frame at a time.">
   <meta property="og:url" content="https://learn2phoenix.github.io/">
   <meta property="og:image" content="https://learn2phoenix.github.io/assets/img/og.jpg">
   <meta name="twitter:card" content="summary_large_image">
@@ -127,10 +127,13 @@
           <aside></aside>
           <div class="prose">
             <p>
-              I work on egocentric procedural video: cooking, assembly, lab
-              protocols. The interesting version is the streaming one. You get one
-              frame at a time, no future context, and no second pass, which rules
-              out most of what the field currently does well.
+              I work on video understanding &mdash; mostly on what a model should
+              hold on to from a long video, and how much of it can be worked out
+              while the video is still playing rather than after the fact. Most of
+              my thesis has gone into the streaming version of that, in egocentric
+              procedural video: cooking, assembly, lab protocols, where you get one
+              frame at a time, no future context and no second pass. That rules out
+              most of what the field currently does well.
             </p>
             <p>
               <strong><a href="https://learn2phoenix.github.io/VidParse/">VidParse</a></strong>
@@ -142,10 +145,10 @@
               baselines by up to 10&times;.
             </p>
             <p>
-              The task graph is the weak part. Someone has to author or induce it,
-              and it is useless on a task that isn&rsquo;t in it. What I&rsquo;m
-              working on now is whether a VLM already holds enough procedural
-              structure to do the parsing without one.
+              The task graph is the weak part: VidParse has to commit to one up
+              front. What I&rsquo;m working on now is using a VLM to build a
+              hierarchical memory in a single streaming pass, structured so that
+              different questions can be answered from it later.
             </p>
             <p>
               Earlier work was about what learned representations already encode.
@@ -163,8 +166,12 @@
             <p>
               I spent eight years in industry before the PhD: analyst work at a few
               banks, then computer vision for automotive safety at Netradyne and
-              geospatial ML at Swiggy, plus four summers at Amazon during it. That is
-              why I care whether a method survives uncurated data and a latency budget.
+              geospatial ML at Swiggy, plus four summers at Amazon during it.
+            </p>
+            <p>
+              The direction I am trying to pull these threads toward is robotics and
+              continual learning: systems that keep learning from what they watch,
+              instead of being trained once and then frozen.
             </p>
 
             <div class="themes">
