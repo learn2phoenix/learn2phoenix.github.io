@@ -266,12 +266,30 @@ a:hover { color: var(--crimson); text-decoration-color: var(--crimson); }
   color: var(--ink);
 }
 
-/* Closes the title block. Nothing follows it now, so it carries no bottom
-   margin of its own — the hero's padding does that work. */
+/* Closes the title block; the indices row hangs below it. */
 .hero__rule {
   height: 1px;
+  flex-shrink: 0;              /* it is a 1px flex item; never let it round to 0 */
   background: var(--ink);
   margin: 1.6rem 0 0;
+}
+
+/* The title block is a column so the indices can be pushed to its foot, where
+   they land level with the last line of the colophon instead of leaving the
+   right half of the title page empty. */
+.hero__title {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Same bracketed idiom as the publication links — CV, Scholar, GitHub … read
+   as documents you can open, not as a list of section headings. */
+.indices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem 1.35rem;
+  margin-top: auto;
+  padding-top: 1.15rem;
 }
 
 /* Bracketed document links — typographic, not iconographic. No pills. */
@@ -293,8 +311,15 @@ a:hover { color: var(--crimson); text-decoration-color: var(--crimson); }
 
 /* -------------------------------------------------------------- prose --- */
 
-.prose { max-width: 63ch; }
-.prose p { color: var(--ink-2); }
+.prose { max-width: none; }
+.prose p {
+  color: var(--ink-2);
+  /* Set a step larger than the body: the measure here is the full content
+     column, so the type has to grow with it or the line gets unreadably long. */
+  font-size: 1.115rem;
+  line-height: 1.68;
+  margin-bottom: 1.15rem;
+}
 .prose strong { font-weight: 600; color: var(--ink); }
 .prose em { font-style: italic; }
 
